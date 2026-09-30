@@ -81,7 +81,7 @@ target "default" {
   }
 
   name = "${distro}"
-  platforms = ["linux/amd64", "linux/arm64"]
+  platforms = ["linux/amd64", "linux/arm64", "linux/ppc64le"]
   tags = [
     "${registry}/cloudnative-pg${suffix}:${tag}${distros[distro].tag}",
     latest("${registry}/cloudnative-pg${suffix}", "${latest}"),
